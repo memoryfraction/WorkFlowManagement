@@ -10,3 +10,29 @@ Pros and Cons for the state pattern
 
 ## Cons
 * If there aren't not enough status, the state pattern is not necessary
+
+
+
+## Design
+
+![UMLDesign](E:\GitHub\StatePattern\Documents\Figs\UMLDesign.png)
+
+
+
+# Sample Code
+
+`using AffiliateProposalStatePatternLibrary;using AffiliateProposalStatePatternLibrary.ConcreteStates;`
+
+`var context = new AffiliateProposalContext(new ConcreteStateDraft());`
+`context.State.Submit();`
+
+`context.State.Decline();`
+
+`context.State.Approve();`
+
+`Console.WriteLine("Done");`
+
+
+
+![](E:\GitHub\StatePattern\Documents\Figs\Output.png)
+
