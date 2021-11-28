@@ -1,4 +1,4 @@
-# StatusPattern
+# StatesPattern
 Status Pattern For WorkOrder, Invoice, and Proposal SmsAssist
 
 
@@ -15,24 +15,26 @@ Pros and Cons for the state pattern
 
 ## Design
 
-![UMLDesign](E:\GitHub\StatePattern\Documents\Figs\UMLDesign.png)
+![UMLDesign](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/UMLDesign.png)
 
 
 
 # Sample Code
 
-`using AffiliateProposalStatePatternLibrary;using AffiliateProposalStatePatternLibrary.ConcreteStates;`
+```C#
+using AffiliateProposalStatePatternLibrary;
+using AffiliateProposalStatePatternLibrary.ConcreteStates;
 
-`var context = new AffiliateProposalContext(new ConcreteStateDraft());`
-`context.State.Submit();`
+var context = new AffiliateProposalContext(new ConcreteStateDraft());
+context.State.Submit();
 
-`context.State.Decline();`
+context.State.Decline();
 
-`context.State.Approve();`
+context.State.Approve();
 
-`Console.WriteLine("Done");`
+Console.WriteLine("Done");
+```
 
 
-
-![](E:\GitHub\StatePattern\Documents\Figs\Output.png)
+![Output](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Output.png)
 
