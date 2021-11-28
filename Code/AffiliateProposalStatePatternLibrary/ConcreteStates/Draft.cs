@@ -8,7 +8,7 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
     {
         public ConcreteStateDraft()
         {
-            this.ProposalStateType = ProposalStateType.Draft;
+            this.ProposalStatus = ProposalStatus.Draft;
         }
         public override void Approve()
         {

@@ -7,7 +7,7 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 
         public ConcreteStateDeclined()
         {
-            this.ProposalStateType = ProposalStateType.Declined;
+            this.ProposalStatus = ProposalStatus.Declined;
         }
 
         public override void Approve()

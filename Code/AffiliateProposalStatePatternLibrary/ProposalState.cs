@@ -11,8 +11,8 @@ namespace AffiliateProposalStatePatternLibrary
     public abstract class ProposalState
     {
         protected AffiliateProposalContext _context;
-        private ProposalStateType _proposalState;
-        public ProposalStateType ProposalStateType { get => _proposalState; set => _proposalState = value; }
+        private ProposalStatus _proposalStatus;
+        public ProposalStatus ProposalStatus { get => _proposalStatus; set => _proposalStatus = value; }
 
         public void SetContext(AffiliateProposalContext context)
         {

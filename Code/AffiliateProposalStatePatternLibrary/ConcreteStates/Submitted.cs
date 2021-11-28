@@ -9,7 +9,7 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
     {
         public ConcreteStateSubmitted()
         {
-            this.ProposalStateType = ProposalStateType.Submitted;
+            this.ProposalStatus = ProposalStatus.Submitted;
         }
 
         public override void Approve()
