@@ -16,7 +16,7 @@ Pros and Cons for the state pattern
 ## Design
 
 ![UMLDesign](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/UMLDesign.png)
-![UMLDesign](https://github.com/memoryfraction/StatusPattern/bl…n/Documents/Figs/Proposal%20workflow.png)
+![ProposalWorkFlow](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Proposal%20workflow.png)
 
 
 # Sample Code
