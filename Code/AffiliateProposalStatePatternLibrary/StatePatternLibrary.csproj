@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Invoice\SmsInvoice\" />
     <Folder Include="WorkOrder\" />
   </ItemGroup>
 

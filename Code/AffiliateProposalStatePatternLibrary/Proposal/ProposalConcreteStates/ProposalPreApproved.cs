@@ -9,7 +9,7 @@ namespace StatePatternLibrary.Proposal.ProposalConcreteStates
     {
         public ProposalConcreteStatePreApprove()
         {
-            this.ProposalStatus = ProposalStatus.Submitted;
+            this.ProposalStatus = ProposalStatus.PreApproved;
         }
 
         public override void Approve()
