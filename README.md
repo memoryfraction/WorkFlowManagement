@@ -1,5 +1,5 @@
-#Context
-Business logic is about work order, proposal, and invoice. there are lot of if...else becuase of the dozens of status for work orders, which is difficult to maintain.
+# Context
+Business logic in Sms Assist LLC is around work order, proposal, and invoice. there are lot of if...else becuase of the dozens of status for work orders, which is difficult to maintain.
 
 
 # StatesPattern
