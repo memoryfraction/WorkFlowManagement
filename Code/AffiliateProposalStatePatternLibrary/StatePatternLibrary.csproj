@@ -8,16 +8,11 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Invoice\**" />
-    <EmbeddedResource Remove="Invoice\**" />
-    <None Remove="Invoice\**" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Invoice\SmsInvoice\" />
     <Folder Include="WorkOrder\" />
   </ItemGroup>
 

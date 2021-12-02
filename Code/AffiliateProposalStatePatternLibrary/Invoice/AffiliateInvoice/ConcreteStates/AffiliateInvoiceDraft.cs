@@ -2,9 +2,9 @@
 
 namespace StatePatternLibrary.ConcreteStates
 {
-    public class ConcreteStateDraft : AffiliateInvoiceState
+    public class AffiliateInvoiceConcreteStateDraft : AffiliateInvoiceState
     {
-        public ConcreteStateDraft()
+        public AffiliateInvoiceConcreteStateDraft()
         {
             this.Status = AffiliateInvoiceStatus.Draft;
         }
