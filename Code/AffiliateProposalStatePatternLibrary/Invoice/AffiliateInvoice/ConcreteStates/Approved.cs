@@ -10,17 +10,17 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
         }
         public override void Approve()
         {
-            Console.WriteLine("Approved Proposal can't been Approved.");
+            throw new InvalidOperationException("Approved Proposal can't been Approved.");
         }
 
         public override void Decline()
         {
-            this._context.ChangeStateTo(new ConcreteStateDeclined());
+            this._context.ChangeStateTo(new ProposalConcreteStateDeclined());
         }
 
         public override void Submit()
         {
-            Console.WriteLine("Approved Proposal can't been Submitted.");
+            throw new InvalidOperationException("Approved Proposal can't been Submitted.");
         }
     }
 

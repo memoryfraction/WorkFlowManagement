@@ -4,7 +4,7 @@ using System.Text;
 
 namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 {
-    public class ConcreteStateDraft : ProposalState
+    public class ConcreteStateDraft : AffiliateInvoiceState
     {
         public ConcreteStateDraft()
         {
@@ -12,12 +12,12 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
         }
         public override void Approve()
         {
-            Console.WriteLine("Draft Proposal can't been approved.");
+            throw new InvalidOperationException("Draft Proposal can't been approved.");
         }
 
         public override void Decline()
         {
-            Console.WriteLine("Draft Proposal can't been declined.");
+            throw new InvalidOperationException("Draft Proposal can't been declined.");
         }
 
         public override void Submit()

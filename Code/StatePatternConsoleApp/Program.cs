@@ -3,11 +3,12 @@
 using AffiliateProposalStatePatternLibrary;
 using AffiliateProposalStatePatternLibrary.ConcreteStates;
 
-var context = new AffiliateProposalContext(new ConcreteStateDraft());
-context.State.Submit();
+var proposalContext = new ProposalContext(new ProposalConcreteStateDraft());
 
-context.State.Decline();
-
-context.State.Approve();
-
+proposalContext.State.Submit();
+Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
+proposalContext.State.Decline();
+Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
+proposalContext.State.Approve();
+Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
 Console.WriteLine("Done");

@@ -2,7 +2,7 @@
 
 namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 {
-    public class ConcreteStateDeclined : ProposalState
+    public class ConcreteStateDeclined : AffiliateInvoiceState
     {
 
         public ConcreteStateDeclined()
@@ -17,12 +17,12 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 
         public override void Decline()
         {
-            Console.WriteLine("Declined Proposal can't been declined.");
+            throw new InvalidOperationException("Declined Proposal can't been declined.");
         }
 
         public override void Submit()
         {
-            Console.WriteLine("Submitted Proposal can't been submitted.");
+            throw new InvalidOperationException("Submitted Proposal can't been submitted.");
         }
     }
 }

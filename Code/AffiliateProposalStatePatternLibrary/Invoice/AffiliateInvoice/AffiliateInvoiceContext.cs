@@ -2,20 +2,20 @@
 
 namespace AffiliateProposalStatePatternLibrary
 {
-    public class AffiliateProposalContext
+    public class AffiliateInvoiceContext
     {
         // A reference to the current state of the Context.
-        private ProposalState _state = null;
-        public ProposalState State { get => _state; set => _state = value; }
+        private AffiliateInvoiceState _state = null;
+        public AffiliateInvoiceState State { get => _state; set => _state = value; }
 
 
-        public AffiliateProposalContext(ProposalState state)
+        public AffiliateInvoiceContext(AffiliateInvoiceState state)
         {
             this.ChangeStateTo(state);
         }
 
         // The Context allows changing the State object at runtime.
-        public void ChangeStateTo(ProposalState state)
+        public void ChangeStateTo(AffiliateInvoiceState state)
         {
             var curStateName = _state == null ? "NA" : _state?.GetType().Name;
             Console.WriteLine($"Context: Changing State: from { curStateName } to {state.GetType().Name}.");

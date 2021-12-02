@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Invoice\AffiliateInvoice\**" />
+    <EmbeddedResource Remove="Invoice\AffiliateInvoice\**" />
+    <None Remove="Invoice\AffiliateInvoice\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.ComponentModel.Annotations" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Invoice\SmsInvoice\" />
+    <Folder Include="WorkOrder\" />
+  </ItemGroup>
+
+</Project>

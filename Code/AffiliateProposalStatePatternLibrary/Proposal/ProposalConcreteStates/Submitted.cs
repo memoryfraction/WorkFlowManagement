@@ -5,26 +5,26 @@ using System.Text;
 namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 {
 
-    public class ConcreteStateSubmitted : ProposalState
+    public class ProposalConcreteStateSubmitted : ProposalState
     {
-        public ConcreteStateSubmitted()
+        public ProposalConcreteStateSubmitted()
         {
             this.ProposalStatus = ProposalStatus.Submitted;
         }
 
         public override void Approve()
         {
-            this._context.ChangeStateTo(new ConcreteStateApproved());
+            this._context.ChangeStateTo(new ProposalConcreteStateApproved());
         }
 
         public override void Decline()
         {
-            this._context.ChangeStateTo(new ConcreteStateDeclined());
+            this._context.ChangeStateTo(new ProposalConcreteStateDeclined());
         }
 
         public override void Submit()
         {
-            Console.WriteLine("Submitted Proposal can't been submitted again.");
+            throw new InvalidOperationException("Submitted Proposal can't been submitted again.");
         }
     }
 

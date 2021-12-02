@@ -8,7 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AffiliateProposalStatePatternLibrary\AffiliateProposalStatePatternLibrary.csproj" />
+    <ProjectReference Include="..\AffiliateProposalStatePatternLibrary\StatePatternLibrary.csproj" />
   </ItemGroup>
 
 </Project>
