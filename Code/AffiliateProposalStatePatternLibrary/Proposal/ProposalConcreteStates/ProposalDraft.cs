@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
     public class ProposalConcreteStateDraft : ProposalState
     {
@@ -12,17 +10,22 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
         }
         public override void Approve()
         {
-            throw new InvalidOperationException("Draft Proposal can't been approved.");
+            throw new InvalidOperationException("Draft Proposal can't be approved.");
         }
 
         public override void Decline()
         {
-            throw new InvalidOperationException("Draft Proposal can't been declined.");
+            throw new InvalidOperationException("Draft Proposal can't be declined.");
         }
 
         public override void Submit()
         {
             this._context.ChangeStateTo(new ProposalConcreteStateSubmitted());
+        }
+
+        public override void PreApprove()
+        {
+            throw new InvalidOperationException("Draft Proposal can't be PreApproved.");
         }
     }
 }

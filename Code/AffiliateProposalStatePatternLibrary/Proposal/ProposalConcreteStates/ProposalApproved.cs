@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
     public class ProposalConcreteStateApproved : ProposalState
     {
@@ -10,7 +10,7 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
         }
         public override void Approve()
         {
-            throw new InvalidOperationException("Approved Proposal can't been Approved.");
+            throw new InvalidOperationException("Approved Proposal can't be Approved.");
         }
 
         public override void Decline()
@@ -20,7 +20,12 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 
         public override void Submit()
         {
-            throw new InvalidOperationException("Approved Proposal can't been Submitted.");
+            throw new InvalidOperationException("Approved Proposal can't be Submitted.");
+        }
+
+        public override void PreApprove()
+        {
+            throw new InvalidOperationException("Approved Proposal can't be PreApproved again.");
         }
     }
 

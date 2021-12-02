@@ -1,6 +1,6 @@
-using AffiliateProposalStatePatternLibrary;
-using AffiliateProposalStatePatternLibrary.ConcreteStates;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using StatePatternLibrary;
+using StatePatternLibrary.ConcreteStates;
 using System;
 
 namespace StatePatternTestProject
@@ -29,6 +29,7 @@ namespace StatePatternTestProject
 
             // Act
             proposalContext.State.Submit();
+            proposalContext.State.PreApprove();
             proposalContext.State.Decline();
             proposalContext.State.Approve();
 
@@ -48,7 +49,6 @@ namespace StatePatternTestProject
             proposalContext.State.Decline();
             proposalContext.State.Approve();
             proposalContext.State.Submit();
-
         }
     }
 }

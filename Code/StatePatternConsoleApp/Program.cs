@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using AffiliateProposalStatePatternLibrary;
-using AffiliateProposalStatePatternLibrary.ConcreteStates;
+using StatePatternLibrary;
+using StatePatternLibrary.ConcreteStates;
 
 var proposalContext = new ProposalContext(new ProposalConcreteStateDraft());
 

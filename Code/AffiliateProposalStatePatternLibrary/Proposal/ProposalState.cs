@@ -1,6 +1,8 @@
 ﻿
 
-namespace AffiliateProposalStatePatternLibrary
+using System;
+
+namespace StatePatternLibrary
 {
     // The base State class declares methods that all Concrete State should
     // implement and also provides a backreference to the Context object,
@@ -17,10 +19,24 @@ namespace AffiliateProposalStatePatternLibrary
             this._context = context;
         }
 
-        public abstract void Submit();
+        public virtual void Submit()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
 
-        public abstract void Approve();
+        public virtual void Approve()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
 
-        public abstract void Decline();
+        public virtual void Decline()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void PreApprove()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
     }
 }

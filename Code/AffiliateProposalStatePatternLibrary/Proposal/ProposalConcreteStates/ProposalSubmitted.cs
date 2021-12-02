@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using StatePatternLibrary.Proposal.ProposalConcreteStates;
+using System;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
-
     public class ProposalConcreteStateSubmitted : ProposalState
     {
         public ProposalConcreteStateSubmitted()
@@ -22,9 +20,14 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
             this._context.ChangeStateTo(new ProposalConcreteStateDeclined());
         }
 
+        public override void PreApprove()
+        {
+            this._context.ChangeStateTo(new ProposalConcreteStatePreApprove());
+        }
+
         public override void Submit()
         {
-            throw new InvalidOperationException("Submitted Proposal can't been submitted again.");
+            throw new InvalidOperationException("Submitted Proposal can't be submitted again.");
         }
     }
 

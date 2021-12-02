@@ -1,8 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿
 
-namespace AffiliateProposalStatePatternLibrary
+namespace StatePatternLibrary
 {
     // The base State class declares methods that all Concrete State should
     // implement and also provides a backreference to the Context object,

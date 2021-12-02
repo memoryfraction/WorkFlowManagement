@@ -1,14 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
     public class ConcreteStateDraft : AffiliateInvoiceState
     {
         public ConcreteStateDraft()
         {
-            this.ProposalStatus = ProposalStatus.Draft;
+            this.Status = AffiliateInvoiceStatus.Draft;
         }
         public override void Approve()
         {
@@ -22,7 +20,7 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 
         public override void Submit()
         {
-            this._context.ChangeStateTo(new ConcreteStateSubmitted());
+            this._context.ChangeStateTo(new AffiliateInvoiceConcreteStateSubmitted());
         }
     }
 }

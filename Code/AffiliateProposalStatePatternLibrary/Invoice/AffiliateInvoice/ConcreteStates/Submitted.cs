@@ -2,24 +2,24 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
 
-    public class ConcreteStateSubmitted : AffiliateInvoiceState
+    public class AffiliateInvoiceConcreteStateSubmitted : AffiliateInvoiceState
     {
-        public ConcreteStateSubmitted()
+        public AffiliateInvoiceConcreteStateSubmitted()
         {
-            this.ProposalStatus = ProposalStatus.Submitted;
+            this.Status = AffiliateInvoiceStatus.Submitted;
         }
 
         public override void Approve()
         {
-            this._context.ChangeStateTo(new ConcreteStateApproved());
+            this._context.ChangeStateTo(new AffiliateInvoiceConcreteStateApproved());
         }
 
         public override void Decline()
         {
-            this._context.ChangeStateTo(new ConcreteStateDeclined());
+            this._context.ChangeStateTo(new AffiliateInvoiceConcreteStateDeclined());
         }
 
         public override void Submit()

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AffiliateProposalStatePatternLibrary
+namespace StatePatternLibrary
 {
     public class ProposalContext
     {

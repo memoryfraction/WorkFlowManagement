@@ -2,12 +2,15 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Company>SMS Assist LLC</Company>
+    <Authors>Rong(Rex) Fan</Authors>
+    <RepositoryUrl>https://github.com/memoryfraction/StatusPattern</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Invoice\AffiliateInvoice\**" />
-    <EmbeddedResource Remove="Invoice\AffiliateInvoice\**" />
-    <None Remove="Invoice\AffiliateInvoice\**" />
+    <Compile Remove="Invoice\**" />
+    <EmbeddedResource Remove="Invoice\**" />
+    <None Remove="Invoice\**" />
   </ItemGroup>
 
   <ItemGroup>
@@ -15,7 +18,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Invoice\SmsInvoice\" />
     <Folder Include="WorkOrder\" />
   </ItemGroup>
 

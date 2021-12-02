@@ -1,18 +1,18 @@
 ﻿using System;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
-    public class ConcreteStateDeclined : AffiliateInvoiceState
+    public class AffiliateInvoiceConcreteStateDeclined : AffiliateInvoiceState
     {
 
-        public ConcreteStateDeclined()
+        public AffiliateInvoiceConcreteStateDeclined()
         {
-            this.ProposalStatus = ProposalStatus.Declined;
+            this.Status = AffiliateInvoiceStatus.Declined;
         }
 
         public override void Approve()
         {
-            this._context.ChangeStateTo(new ConcreteStateApproved());
+            this._context.ChangeStateTo(new AffiliateInvoiceConcreteStateApproved());
         }
 
         public override void Decline()

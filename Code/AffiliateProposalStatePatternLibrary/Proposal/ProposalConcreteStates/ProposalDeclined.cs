@@ -1,10 +1,9 @@
 ﻿using System;
 
-namespace AffiliateProposalStatePatternLibrary.ConcreteStates
+namespace StatePatternLibrary.ConcreteStates
 {
     public class ProposalConcreteStateDeclined : ProposalState
     {
-
         public ProposalConcreteStateDeclined()
         {
             this.ProposalStatus = ProposalStatus.Declined;
@@ -17,12 +16,17 @@ namespace AffiliateProposalStatePatternLibrary.ConcreteStates
 
         public override void Decline()
         {
-            throw new InvalidOperationException("Declined Proposal can't been declined.");
+            throw new InvalidOperationException("Declined Proposal can't be declined.");
         }
 
         public override void Submit()
         {
-            throw new InvalidOperationException("Submitted Proposal can't been submitted.");
+            throw new InvalidOperationException("Declined Proposal can't be submitted.");
+        }
+
+        public override void PreApprove()
+        {
+            throw new InvalidOperationException("Declined Proposal can't be PreApproved.");
         }
     }
 }
