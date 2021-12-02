@@ -17,10 +17,8 @@ namespace StatePatternTestProject
         {
             // Arrange
             var context = new SmsInvoiceContext(new SmsInvoiceConcreteStateDraft());
-
             // Act
             context.State.Submit();
-
             // Assert
             Assert.AreEqual(SmsInvoiceStatus.SubmittedForSmsAudit, context.State.Status);
         }
@@ -36,7 +34,6 @@ namespace StatePatternTestProject
             context.State.SmsAuditDecline();
             Assert.AreEqual(SmsInvoiceStatus.SmsAuditDeclined, context.State.Status);
 
-
             context.State.ClientApprove();
             Assert.AreEqual(SmsInvoiceStatus.ClientApproved, context.State.Status);
         }
@@ -47,7 +44,6 @@ namespace StatePatternTestProject
         {
             // Arrange
             var context = new SmsInvoiceContext(new SmsInvoiceConcreteStateDraft());
-
             // Act
             context.State.Submit();
             context.State.ClientDecline();
