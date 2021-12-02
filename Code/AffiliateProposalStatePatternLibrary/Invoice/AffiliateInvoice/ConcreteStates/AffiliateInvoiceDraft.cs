@@ -10,12 +10,12 @@ namespace StatePatternLibrary.ConcreteStates
         }
         public override void Approve()
         {
-            throw new InvalidOperationException("Draft Proposal can't been approved.");
+            throw new InvalidOperationException("Draft Proposal can't be approved.");
         }
 
         public override void Decline()
         {
-            throw new InvalidOperationException("Draft Proposal can't been declined.");
+            throw new InvalidOperationException("Draft Proposal can't be declined.");
         }
 
         public override void Submit()

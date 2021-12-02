@@ -10,7 +10,7 @@ namespace StatePatternLibrary.ConcreteStates
         }
         public override void Approve()
         {
-            throw new InvalidOperationException("Approved Proposal can't been Approved.");
+            throw new InvalidOperationException("Approved Proposal can't be Approved.");
         }
 
         public override void Decline()
@@ -20,7 +20,7 @@ namespace StatePatternLibrary.ConcreteStates
 
         public override void Submit()
         {
-            throw new InvalidOperationException("Approved Proposal can't been Submitted.");
+            throw new InvalidOperationException("Approved Proposal can't be Submitted again.");
         }
     }
 

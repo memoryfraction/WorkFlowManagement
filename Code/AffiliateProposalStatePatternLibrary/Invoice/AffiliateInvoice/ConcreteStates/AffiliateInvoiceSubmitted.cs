@@ -24,7 +24,7 @@ namespace StatePatternLibrary.ConcreteStates
 
         public override void Submit()
         {
-            throw new InvalidOperationException("Submitted Proposal can't been submitted again.");
+            throw new InvalidOperationException("Submitted Proposal can't be submitted again.");
         }
     }
 

@@ -38,7 +38,7 @@ namespace StatePatternTestProject
         }
 
         [TestMethod]
-        [ExpectedException(typeof(InvalidOperationException))]
+        [ExpectedException(typeof(InvalidOperationException), "Approved Proposal can't be Submitted again.")]
         public void TestMethodShouldThrowException()
         {
             // Arrange

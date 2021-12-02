@@ -17,12 +17,12 @@ namespace StatePatternLibrary.ConcreteStates
 
         public override void Decline()
         {
-            throw new InvalidOperationException("Declined Proposal can't been declined.");
+            throw new InvalidOperationException("Declined Proposal can't be declined.");
         }
 
         public override void Submit()
         {
-            throw new InvalidOperationException("Submitted Proposal can't been submitted.");
+            throw new InvalidOperationException("Submitted Proposal can't be submitted.");
         }
     }
 }
