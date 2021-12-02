@@ -26,19 +26,20 @@ Pros and Cons for the state pattern
 # Sample Code
 
 ```C#
-using AffiliateProposalStatePatternLibrary;
-using AffiliateProposalStatePatternLibrary.ConcreteStates;
+using StatePatternLibrary;
+using StatePatternLibrary.ConcreteStates;
 
-var context = new AffiliateProposalContext(new ConcreteStateDraft());
-context.State.Submit();
-
-context.State.Decline();
-
-context.State.Approve();
-
+var proposalContext = new ProposalContext(new ProposalConcreteStateDraft());
+proposalContext.State.Submit();
+Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
+proposalContext.State.Decline();
+Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
+proposalContext.State.Approve();
+Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
 Console.WriteLine("Done");
 ```
-
-
 ![Output](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Output.png)
+
+# UnitTests
+![UnitTestForSmsInvoice](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/UnittestForSmsInvoices.png)
 
