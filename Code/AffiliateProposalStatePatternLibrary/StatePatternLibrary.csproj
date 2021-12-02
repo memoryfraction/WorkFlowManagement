@@ -5,6 +5,8 @@
     <Company>SMS Assist LLC</Company>
     <Authors>Rong(Rex) Fan</Authors>
     <RepositoryUrl>https://github.com/memoryfraction/StatusPattern</RepositoryUrl>
+    <Product />
+    <Description>A package that help to manage the status and action for invoice, proposal, and work order</Description>
   </PropertyGroup>
 
   <ItemGroup>
