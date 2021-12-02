@@ -1,5 +1,9 @@
+# Context
+Business logic in Sms Assist LLC is around work order, proposal, and invoice. there are lot of if...else becuase of the dozens of status for work orders, which is difficult to maintain.
+
+
 # StatesPattern
-Status Pattern For WorkOrder, Invoice, and Proposal SmsAssist
+Status Pattern For ReactiveWorkOrder, SMSInvoice, AffiliateInvoice, and Proposal in Sms Assist LLC
 
 
 Pros and Cons for the state pattern
