@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31912.275
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatePatternLibrary", "AffiliateProposalStatePatternLibrary\StatePatternLibrary.csproj", "{19AD0247-30C8-4F1B-9ED7-6C52F47698D6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkFlowManagement", "AffiliateProposalStatePatternLibrary\WorkFlowManagement.csproj", "{19AD0247-30C8-4F1B-9ED7-6C52F47698D6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StatePatternConsoleApp", "StatePatternConsoleApp\StatePatternConsoleApp.csproj", "{53541E5B-3346-4002-9886-E8482BD09BB0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkFlowManagementConsoleApp", "StatePatternConsoleApp\WorkFlowManagementConsoleApp.csproj", "{53541E5B-3346-4002-9886-E8482BD09BB0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StatePatternTestProject", "StatePatternTestProject\StatePatternTestProject.csproj", "{8697B6B3-5B5B-44A8-95F6-AF4B7295535A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkFlowManagementTestProject", "StatePatternTestProject\WorkFlowManagementTestProject.csproj", "{8697B6B3-5B5B-44A8-95F6-AF4B7295535A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
