@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AffiliateProposalStatePatternLibrary\WorkFlowManagement.csproj" />
+    <ProjectReference Include="..\WorkFlowManagement\WorkFlowManagement.csproj" />
   </ItemGroup>
 
 </Project>

@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="WorkOrder\" />
+    <Folder Include="WorkOrder\Reactive\" />
   </ItemGroup>
 
 </Project>
