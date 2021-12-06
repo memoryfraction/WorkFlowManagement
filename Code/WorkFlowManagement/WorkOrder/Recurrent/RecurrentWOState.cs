@@ -39,7 +39,7 @@ namespace WorkFlowManagement.WorkOrder
         {
             throw new InvalidOperationException("Invalid Operation");
         }
-        public virtual void AffiliatePayable()
+        public virtual void PaytoAffiliate()
         {
             throw new InvalidOperationException("Invalid Operation");
         }
