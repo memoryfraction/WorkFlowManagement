@@ -8,9 +8,14 @@ namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
             this.Status = WorkOrderStatus.OnSite;
         }
 
-        public virtual void CheckIn()
+        public override void CheckOut()
         {
-            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteOnSite());
+            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteBilled());
+        }
+
+        public override void Undo()
+        {
+            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteScheduled());
         }
     }
 }

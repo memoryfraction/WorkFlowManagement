@@ -25,7 +25,7 @@ namespace WorkFlowManagement.WorkOrder
             throw new InvalidOperationException("Invalid Operation");
         }
 
-        public virtual void ChecikIn()
+        public virtual void CheckIn()
         {
             throw new InvalidOperationException("Invalid Operation");
         }
@@ -40,6 +40,10 @@ namespace WorkFlowManagement.WorkOrder
             throw new InvalidOperationException("Invalid Operation");
         }
         public virtual void PaytoAffiliate()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+        public virtual void Undo()
         {
             throw new InvalidOperationException("Invalid Operation");
         }

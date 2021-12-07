@@ -7,9 +7,14 @@
             this.Status = WorkOrderStatus.Scheduled;
         }
 
-        public virtual void CheckIn()
+        public override void CheckIn()
         {
             this._context.ChangeStateTo(new RecurrentWorkOrderConcreteOnSite());
+        }
+
+        public override void Undo()
+        {
+            this._context.ChangeStateTo(new RecurrentWorkOrderConcretePendingSchedule());
         }
     }
 }

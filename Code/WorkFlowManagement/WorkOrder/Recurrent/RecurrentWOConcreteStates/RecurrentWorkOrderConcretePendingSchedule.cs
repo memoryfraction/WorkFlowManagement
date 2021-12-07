@@ -8,7 +8,7 @@ namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
             this.Status = WorkOrderStatus.PendingSchedule;
         }
 
-        public virtual void Schedule()
+        public override void Schedule()
         {
             this._context.ChangeStateTo(new RecurrentWorkOrderConcreteScheduled());
         }
