@@ -10,12 +10,9 @@ namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
 
         public override void CheckOut()
         {
-            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteBilled());
+            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteCompleted());
         }
 
-        public override void Undo()
-        {
-            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteScheduled());
-        }
+      
     }
 }

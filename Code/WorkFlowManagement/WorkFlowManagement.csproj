@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="WorkOrder\Reactive\" />
+    <Folder Include="WorkOrder\Reactive\ReactiveWOConcreteStates\" />
   </ItemGroup>
 
 </Project>

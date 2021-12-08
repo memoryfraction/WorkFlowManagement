@@ -8,7 +8,7 @@ namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
             this.Status = WorkOrderStatus.Completed;
         }
 
-        public virtual void BatchInvoice()
+        public override void BatchInvoice()
         {
             this._context.ChangeStateTo(new RecurrentWorkOrderConcreteBilled());
         }

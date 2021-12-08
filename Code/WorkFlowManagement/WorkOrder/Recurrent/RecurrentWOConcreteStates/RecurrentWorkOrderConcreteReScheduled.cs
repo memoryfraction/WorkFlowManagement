@@ -1,17 +1,17 @@
 ﻿namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
 {
-    public class RecurrentWorkOrderConcreteScheduled : RecurrentWOState
+    public class RecurrentWorkOrderConcreteReScheduled : RecurrentWOState
     {
-        public RecurrentWorkOrderConcreteScheduled()
+        public RecurrentWorkOrderConcreteReScheduled()
         {
-            this.Status = WorkOrderStatus.Scheduled;
+            this.Status = WorkOrderStatus.Rescheduled;
         }
+
 
         public override void CheckIn()
         {
             this._context.ChangeStateTo(new RecurrentWorkOrderConcreteOnSite());
         }
-
         public override void ReSchedule()
         {
             this._context.ChangeStateTo(new RecurrentWorkOrderConcreteScheduled());

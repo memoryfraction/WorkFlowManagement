@@ -25,6 +25,11 @@ namespace WorkFlowManagement.WorkOrder
             throw new InvalidOperationException("Invalid Operation");
         }
 
+        public virtual void ReSchedule()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
         public virtual void CheckIn()
         {
             throw new InvalidOperationException("Invalid Operation");
@@ -43,9 +48,6 @@ namespace WorkFlowManagement.WorkOrder
         {
             throw new InvalidOperationException("Invalid Operation");
         }
-        public virtual void Undo()
-        {
-            throw new InvalidOperationException("Invalid Operation");
-        }
+        
     }
 }

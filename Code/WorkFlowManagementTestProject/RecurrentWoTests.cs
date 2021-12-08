@@ -21,44 +21,33 @@ namespace WorkFlowManagementTestProject
                 context.State.Schedule();
                 context.State.CheckIn();
                 context.State.CheckOut();
+                context.State.BatchInvoice();
                 context.State.PaytoAffiliate();
 
                 // Assert
-                Assert.AreEqual(WorkOrderStatus.CompletedandInvoiced, context.State.Status);
+                Assert.AreEqual(WorkOrderStatus.PaytoAffiliate, context.State.Status);
             }
 
 
             [TestMethod]
-            public void TestMethodUndo_Should_Work()
+            public void TestMethodReschedule_Should_Work()
             {
                 // Arrange
                 var context = new RecurrentWOContext(new RecurrentWorkOrderConcretePendingSchedule());
 
                 // Act
                 context.State.Schedule();
+                context.State.ReSchedule();
                 context.State.CheckIn();
                 context.State.CheckOut();
-                context.State.Undo();
-                Assert.AreEqual(WorkOrderStatus.OnSite, context.State.Status);
-
-                context.State.Undo();
-                Assert.AreEqual(WorkOrderStatus.Scheduled, context.State.Status);
-
-                context.State.Undo();
-                Assert.AreEqual(WorkOrderStatus.PendingSchedule, context.State.Status);
-            }
-
-            [TestMethod]
-            [ExpectedException(typeof(InvalidOperationException))]
-            public void TestMethodException_Should_Throw()
-            {
-                // Arrange
-                var context = new RecurrentWOContext(new RecurrentWorkOrderConcretePendingSchedule());
-
-                // Act
+                context.State.BatchInvoice();
                 context.State.PaytoAffiliate();
-               
+
+                // Assert
+                Assert.AreEqual(WorkOrderStatus.PaytoAffiliate, context.State.Status);
             }
+
+
 
         }
     }

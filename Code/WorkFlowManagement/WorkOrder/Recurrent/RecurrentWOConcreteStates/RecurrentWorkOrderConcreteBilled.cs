@@ -10,13 +10,10 @@ namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
 
         public override void PaytoAffiliate()
         {
-            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteCompletedandInvoiced());
+            this._context.ChangeStateTo(new RecurrentWorkOrderConcretePayToAffiliate());
         }
 
-        public override void Undo()
-        {
-            this._context.ChangeStateTo(new RecurrentWorkOrderConcreteOnSite());
-        }
+     
 
     }
 }
