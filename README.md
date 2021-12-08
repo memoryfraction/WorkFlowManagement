@@ -11,6 +11,8 @@ Pros and Cons for the state pattern
 * The single responsibility principle places code related to a particular state in a seperate class.
 * Open-Close principle. No need to change the existing status and context to add a new state.
 * Clean the redundent "if ... else..."
+* reduce the maintenance cost for the life cycle
+* Lowering the learning curve for new Software Developer
 
 ## Cons
 * If there aren't not enough status, the state pattern is not necessary
