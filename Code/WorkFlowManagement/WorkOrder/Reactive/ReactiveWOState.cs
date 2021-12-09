@@ -16,7 +16,59 @@ namespace WorkFlowManagement.WorkOrder.Reactive
             this._context = context;
         }
 
+
+        public virtual void AffiliateCreatesInvoice()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void ApprovePendingClientQuote()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void AffiliateEntersQuote()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void CheckOut(WorkOrderStatus workOrderStatus)
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void PaytoAffiliate()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void BatchInvoice()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+        
+
+        public virtual void Bill()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void ReturnTripNeeded()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void Dispatch()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
         public virtual void Schedule()
+        {
+            throw new InvalidOperationException("Invalid Operation");
+        }
+
+        public virtual void PendingSchedule()
         {
             throw new InvalidOperationException("Invalid Operation");
         }
@@ -76,7 +128,7 @@ namespace WorkFlowManagement.WorkOrder.Reactive
             throw new InvalidOperationException("Invalid Operation");
         }
 
-        public virtual void DeclineVendorInvoice()
+        public virtual void RejectVendorInvoice()
         {
             throw new InvalidOperationException("Invalid Operation");
         }
@@ -86,9 +138,5 @@ namespace WorkFlowManagement.WorkOrder.Reactive
             throw new InvalidOperationException("Invalid Operation");
         }
 
-        public virtual void Undo()
-        {
-            throw new InvalidOperationException("Invalid Operation");
-        }
     }
 }
