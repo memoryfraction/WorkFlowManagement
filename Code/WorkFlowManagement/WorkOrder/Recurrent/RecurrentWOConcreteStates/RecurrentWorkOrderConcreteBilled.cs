@@ -8,7 +8,7 @@ namespace WorkFlowManagement.WorkOrder.Recurrent.RecurrentWOConcreteStates
             this.Status = WorkOrderStatus.Billed;
         }
 
-        public void PaytoAffiliate()
+        public override void PaytoAffiliate()
         {
             this._context.ChangeStateTo(new RecurrentWorkOrderConcretePayToAffiliate());
         }
