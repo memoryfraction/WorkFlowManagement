@@ -50,6 +50,5 @@ namespace StatePatternTestProject
             context.State.Approve();
             context.State.Submit();
         }
-
     }
 }
