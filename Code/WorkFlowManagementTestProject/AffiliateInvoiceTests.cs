@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StatePatternLibrary;
-using StatePatternLibrary.ConcreteStates;
+using WorkFlowManagementLibrary;
+using WorkFlowManagementLibrary.ConcreteStates;
 using System;
 
 namespace StatePatternTestProject

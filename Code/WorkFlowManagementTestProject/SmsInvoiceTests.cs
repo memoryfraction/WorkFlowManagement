@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using StatePatternLibrary.Invoice.SmsInvoice;
-using StatePatternLibrary.Invoice.SmsInvoice.ConcreteStates;
+using WorkFlowManagementLibrary.Invoice.SmsInvoice;
+using WorkFlowManagementLibrary.Invoice.SmsInvoice.ConcreteStates;
 using System;
 
 namespace StatePatternTestProject

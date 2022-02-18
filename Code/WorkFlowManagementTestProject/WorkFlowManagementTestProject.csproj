@@ -14,7 +14,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WorkFlowManagement\WorkFlowManagement.csproj" />
+    <ProjectReference Include="..\WorkFlowManagementLibrary\WorkFlowManagementLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="WorkFlowManagementLibrary">
+      <HintPath>..\WorkFlowManagementLibrary\bin\Debug\netstandard2.0\WorkFlowManagementLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>

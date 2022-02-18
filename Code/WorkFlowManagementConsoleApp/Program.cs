@@ -1,7 +1,7 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
-using StatePatternLibrary;
 using StatePatternLibrary.ConcreteStates;
+using WorkFlowManagementLibrary;
 
 var proposalContext = new ProposalContext(new ProposalConcreteStateDraft());
 

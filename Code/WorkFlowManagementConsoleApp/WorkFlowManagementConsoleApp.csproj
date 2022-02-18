@@ -8,7 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\WorkFlowManagement\WorkFlowManagement.csproj" />
+    <Reference Include="WorkFlowManagement">
+      <HintPath>bin\Debug\net6.0\WorkFlowManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="WorkFlowManagementLibrary">
+      <HintPath>..\WorkFlowManagementLibrary\bin\Debug\netstandard2.0\WorkFlowManagementLibrary.dll</HintPath>
+    </Reference>
   </ItemGroup>
 
 </Project>
