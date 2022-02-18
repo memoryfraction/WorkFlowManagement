@@ -25,6 +25,10 @@ Pros and Cons for the state pattern
 ![ProposalWorkFlow](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Proposal%20workflow.png)
 
 
+# Problem to resolve
+StatusA + ActionB = StatusC(???)
+
+
 # Steps to Use
 ```C#
 Install-Package WorkFlowManagementLibrary -Version 1.0.0
