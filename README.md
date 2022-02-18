@@ -25,20 +25,55 @@ Pros and Cons for the state pattern
 ![ProposalWorkFlow](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Proposal%20workflow.png)
 
 
+# Steps to Use
+```C#
+Install-Package WorkFlowManagementLibrary -Version 1.0.0
+```
+
+
 # Sample Code
 
 ```C#
-using StatePatternLibrary;
-using StatePatternLibrary.ConcreteStates;
+[TestMethod]
+public void TestMethod_ClientQuoteApproved_Should_Work()
+{
+    // Arrange
+    var context = new ReactiveWOContext(new ReactiveWorkOrderPendingDispatch());
 
-var proposalContext = new ProposalContext(new ProposalConcreteStateDraft());
-proposalContext.State.Submit();
-Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
-proposalContext.State.Decline();
-Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
-proposalContext.State.Approve();
-Console.WriteLine($"The Current Status:{proposalContext.State.ProposalStatus}");
-Console.WriteLine("Done");
+    // Act
+    context.State.Dispatch();
+    context.State.Schedule();
+    context.State.CheckIn();
+    context.State.CheckOut(WorkOrderStatus.PendingVendorQuote);
+    context.State.AffiliateEntersQuote();
+    context.State.ApprovePendingClientQuote();
+    context.State.RejectClientQuote();
+    context.State.RejectVendorQuote();
+    context.State.AffiliateEntersQuote();
+    context.State.ApprovePendingClientQuote();
+    context.State.ApproveClientQuote();
+
+    // Assert
+    Assert.AreEqual(WorkOrderStatus.QuoteApproved, context.State.Status);
+}
+
+
+[TestMethod]
+public void TestMethodWholeWorkflowShouldWork()
+{
+    // Arrange
+    var context = new RecurrentWOContext(new RecurrentWorkOrderConcretePendingSchedule());
+
+    // Act
+    context.State.Schedule();
+    context.State.CheckIn();
+    context.State.CheckOut();
+    context.State.BatchInvoice();
+    context.State.PaytoAffiliate();
+
+    // Assert
+    Assert.AreEqual(WorkOrderStatus.PaytoAffiliate, context.State.Status);
+}
 ```
 ![Output](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Output.png)
 
