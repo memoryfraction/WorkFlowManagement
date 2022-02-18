@@ -75,7 +75,6 @@ public void TestMethodWholeWorkflowShouldWork()
     Assert.AreEqual(WorkOrderStatus.PaytoAffiliate, context.State.Status);
 }
 ```
-![Output](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/Output.png)
 
 # UnitTests
 ![UnitTestForSmsInvoice](https://github.com/memoryfraction/StatusPattern/blob/main/Documents/Figs/UnittestForSmsInvoices.png)
