@@ -4,10 +4,11 @@
     <TargetFramework>netstandard2.0</TargetFramework>
     <Company>SMS Assist LLC</Company>
     <Authors>Rong(Rex) Fan</Authors>
-    <RepositoryUrl>https://github.com/memoryfraction/StatusPattern</RepositoryUrl>
+    <RepositoryUrl>https://github.com/memoryfraction/WorkFlowManagement</RepositoryUrl>
     <Product>WorkFlowManagement</Product>
     <Description>A package that help to manage the status and action for invoice, proposal, and work order</Description>
     <PackageProjectUrl>https://github.com/memoryfraction/WorkFlowManagement</PackageProjectUrl>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
   </PropertyGroup>
 
   <ItemGroup>
